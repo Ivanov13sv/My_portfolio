@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import FlexContainer from './FlexContainer';
-import avatar from '../img/ava.jpg'
+import avatar from '../img/stanislav.jpg'
 
-const Header = () => {
+const Navbar = () => {
     return (
-        <StyledHeader>
+        <StyledNavbar>
             <nav>
-                <FlexContainer align='center' justify='space-between'>
-                    <NavLogo href='#home'>Marlon</NavLogo>
+                <FlexContainer align='center' justify='flex-end'>
+                    {/* <NavLogo href='#home'>Stanislaw</NavLogo> */}
                     <NavMenu>
                         <ul>
                             <li>
@@ -43,16 +43,16 @@ const Header = () => {
                             </li>
                         </ul>
                     </NavMenu>
-                    <Avatar src={avatar} alt='avatar' />
+                    {/* <Avatar src={avatar} alt='avatar' /> */}
                 </FlexContainer>
             </nav>
-        </StyledHeader>
+        </StyledNavbar>
     );
 };
 
-export default Header;
+export default Navbar;
 
-const StyledHeader = styled.header`
+const StyledNavbar = styled.header`
 padding: 10px;
 position: fixed;
 top: 0;
@@ -62,16 +62,18 @@ background: #f5f9f9;
 z-index: 5;
 transition: .4s;
 box-shadow: 0 -1px 12px #00000026;
+height: 47px;
 `
-const Avatar = styled.img`
-width: 35px;
-height: 35px;
-border-radius: 50%;
-`
-const NavLogo = styled.a`
-font-weight: 600;
-color: rgb(18, 18, 18);
-`
+// const Avatar = styled.img`
+// width: 35px;
+// height: 35px;
+// border-radius: 50%;
+// @media (min-width: 767px){
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
+// `
 
 const NavMenu = styled.div`
 ul{

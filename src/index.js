@@ -27,9 +27,13 @@ const Global = createGlobalStyle`
 `
 
 const theme = {
-    color: {
-        firstColor: 'hsl(174, 55%, 42%)',
-        secondColor: 'hsl(297, 61%, 62%)'
+    colors: {
+        primary: 'green',
+        secondary: 'red'
+    },
+    media: {
+        phone: '(max-width: 425px)',
+        tablet: '(max-width: 768px) and (min-width: 425px)',
     }
 }
 
