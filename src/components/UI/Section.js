@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-const Section = ({children}) => {
+const Section = ({ children }) => {
     return (
         <StyledSection>
             {children}
@@ -11,6 +11,7 @@ const Section = ({children}) => {
 export default Section;
 
 const StyledSection = styled.section`
-padding: 4.5rem 0 2rem 0;
-margin: 0 0 60px 0;
+display: flex;
+height: 100vh;
+padding: 4rem 0 4.5rem 0;
 `

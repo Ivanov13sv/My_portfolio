@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import FlexContainer from './FlexContainer';
-import avatar from '../img/stanislav.jpg'
 
 const Navbar = () => {
     return (
@@ -62,7 +61,7 @@ background: #f5f9f9;
 z-index: 5;
 transition: .4s;
 box-shadow: 0 -1px 12px #00000026;
-height: 47px;
+height: 3rem;
 `
 // const Avatar = styled.img`
 // width: 35px;
