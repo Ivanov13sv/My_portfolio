@@ -4,7 +4,7 @@ import FlexContainer from './FlexContainer';
 
 const Navbar = () => {
     return (
-        <StyledNavbar>
+        // <StyledNavbar>
             <nav>
                 <FlexContainer align='center' justify='flex-end'>
                     {/* <NavLogo href='#home'>Stanislaw</NavLogo> */}
@@ -45,24 +45,24 @@ const Navbar = () => {
                     {/* <Avatar src={avatar} alt='avatar' /> */}
                 </FlexContainer>
             </nav>
-        </StyledNavbar>
+        // {/* </StyledNavbar> */}
     );
 };
 
 export default Navbar;
 
-const StyledNavbar = styled.header`
-padding: 10px;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-background: #f5f9f9;
-z-index: 5;
-transition: .4s;
-box-shadow: 0 -1px 12px #00000026;
-height: 3rem;
-`
+// const StyledNavbar = styled.header`
+// padding: 10px;
+// position: fixed;
+// top: 0;
+// left: 0;
+// width: 100%;
+// background: #f5f9f9;
+// z-index: 5;
+// transition: .4s;
+// box-shadow: 0 -1px 12px #00000026;
+// height: 3rem;
+// `
 // const Avatar = styled.img`
 // width: 35px;
 // height: 35px;

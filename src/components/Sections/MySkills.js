@@ -9,6 +9,7 @@ const MySkills = () => {
         <Section display='flex' direction='column'>
             <SectionTitle>My skills</SectionTitle>
             <Word></Word>
+            {/* <BackgroundCubes /> */}
         </Section>
     );
 };

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
-// import './img/background/ocean.jpg'
+
 const Global = createGlobalStyle`
     *{
         margin: 0;
@@ -34,9 +34,12 @@ const Global = createGlobalStyle`
 
     }
     
-
 `
+// 
 
+
+
+// 
 
 const theme = {
     colors: {

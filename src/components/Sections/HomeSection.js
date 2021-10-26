@@ -7,7 +7,7 @@ const HomeSection = () => {
     return (
         <Section display='flex' direction='column'>
             <HelloBody>
-                <HelloTitle>Hi, <br /> I'am <span>Stas</span> <br /> Junior Frontend developer </HelloTitle>
+                <HelloTitle>Hi, <br /> I'm <span>Stas</span> <br /> Beginner Frontend developer </HelloTitle>
             </HelloBody>
             <About>
                 <SocialLinks>
@@ -16,7 +16,7 @@ const HomeSection = () => {
                     <SocialLink><i class='bx bxl-github' ></i></SocialLink>
 
                 </SocialLinks>
-                <Avatar src={avatar} alt='avatar' />
+                {/* <Avatar src={avatar} alt='avatar' /> */}
 
             </About>
         </Section>
@@ -25,18 +25,18 @@ const HomeSection = () => {
 
 export default HomeSection;
 
-const Avatar = styled.img`
-    width: 100px;
-@media (max-width: 767px){
-    position: fixed;
-    top: 1%;
-    right: 1%;
-    z-index: 5;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-`
+// const Avatar = styled.img`
+//     width: 100px;
+// @media (max-width: 767px){
+//     position: fixed;
+//     top: 1%;
+//     right: 1%;
+//     z-index: 5;
+//     width: 35px;
+//     height: 35px;
+//     border-radius: 50%;
+// }
+// `
 const About = styled.div`
 margin: 50px 0 0 0;
 display: flex;
@@ -59,25 +59,13 @@ line-height: 130%;
 margin: 20px 0 40px 0;
 text-shadow: 0px 0px 1px #0000005c;
  span{
+     position: relative;
+     z-index: 5;
      color: #4070F4;
  }
     
 }
 `
-
-// const StyledButton = styled.a`
-// display: inline-flex;
-// justify-content: center;
-// align-items: center;
-// height: 45px;
-// padding: 0 45px;
-// border-radius: 9px;
-// background: #4070F4;
-// color: white;
-// font-weight: 600;
-// font-size: 18px;
-
-// `
 
 const SocialLink = styled.a`
 display: flex;

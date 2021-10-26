@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import stas from '../../img/321.jpg'
 import SectionTitle from '../UI/SectionTitle';
+import BackgroundCubes from '../UI/BackgroundCubes';
 
 const AboutSection = () => {
     return (
@@ -17,6 +18,7 @@ const AboutSection = () => {
                 </AboutSubtitle>
 
             </AboutContainer>
+            <BackgroundCubes />
         </About>
     );
 };

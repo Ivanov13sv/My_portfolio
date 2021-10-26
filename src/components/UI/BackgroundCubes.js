@@ -2,6 +2,7 @@ import React from 'react';
 import styled,{keyframes} from "styled-components";
 const BackgroundCubes = () => {
     return (
+        <Wrapper>
         <Area>
             <Circles>
                 <li></li>
@@ -16,18 +17,20 @@ const BackgroundCubes = () => {
                 <li></li>
             </Circles>
         </Area >
+        </Wrapper>
     );
 };
 
 export default BackgroundCubes;
 
+const Wrapper = styled.div`
+
+`
 
 const Area = styled.div`
-background: #4e54c8;  
 background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
 width: 100%;
 height:100vh;
-
 `
 
 const animate = keyframes`
@@ -48,7 +51,7 @@ const animate = keyframes`
 
 const Circles = styled.ul`
 position: absolute;
-z-index: 5;
+z-index: 0;
 top: 0;
 left: 0;
 width: 100%;
@@ -60,8 +63,8 @@ li{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.4);
-    animation: ${animate} 25s linear infinite;
+    background: rgba(255, 255, 255, 0.6);
+    animation: ${animate} 13s linear infinite;
     bottom: -150px; 
 }
 li:nth-child(1){
@@ -74,14 +77,14 @@ li:nth-child(2){
     left: 10%;
     width: 20px;
     height: 20px;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 12s;
 }
 li:nth-child(3){
     left: 70%;
     width: 20px;
     height: 20px;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 li:nth-child(4){
     left: 40%;
