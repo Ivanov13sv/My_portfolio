@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../UI/SectionTitle';
-import Section from '../UI/Section'
+import Section from '../UI/Section';
+import Word from '../UI/Word';
 
 const MySkills = () => {
     return (
-        <Section>
+        <Section display='flex' direction='column'>
             <SectionTitle>My skills</SectionTitle>
+            <Word></Word>
         </Section>
     );
 };

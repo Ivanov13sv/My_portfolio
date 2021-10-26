@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import avatar from '../../img/stanislav.jpg'
+import Section from '../UI/Section'
 
 const HomeSection = () => {
     return (
-        <Home>
+        <Section display='flex' direction='column'>
             <HelloBody>
                 <HelloTitle>Hi, <br /> I'am <span>Stas</span> <br /> Junior Frontend developer </HelloTitle>
             </HelloBody>
@@ -18,16 +19,11 @@ const HomeSection = () => {
                 <Avatar src={avatar} alt='avatar' />
 
             </About>
-        </Home>
+        </Section>
     );
 };
 
 export default HomeSection;
-
-const Home = styled.section`
-height: 100vh;
-padding: 3rem 0 4rem 0;
-`
 
 const Avatar = styled.img`
     width: 100px;
@@ -47,7 +43,7 @@ display: flex;
 `
 
 const HelloBody = styled.div`
-padding: 3rem 0 0 0;
+padding: 1rem 0 0 0;
 
 `
 

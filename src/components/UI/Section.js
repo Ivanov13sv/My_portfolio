@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-const Section = ({ children }) => {
+const Section = (props) => {
     return (
-        <StyledSection>
-            {children}
-        </StyledSection>
+        <StyledSection {...props} />
     );
 };
 
 export default Section;
 
 const StyledSection = styled.section`
-display: flex;
+display: ${props => props.display || 'block'};
+flex-direction: ${props => props.direction || 'row'};
 height: 100vh;
-padding: 4rem 0 4.5rem 0;
+padding: 4rem 0 0 0;
 `

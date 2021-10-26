@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
-
+// import './img/background/ocean.jpg'
 const Global = createGlobalStyle`
     *{
         margin: 0;
@@ -31,35 +31,12 @@ const Global = createGlobalStyle`
 
     body {
         background-image: linear-gradient(to right, #ffffff, #f8f8f8, #f1f1f1, #eaeaea, #e3e3e3);
-    }
-    
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    
-    
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+
     }
     
 
 `
+
 
 const theme = {
     colors: {
