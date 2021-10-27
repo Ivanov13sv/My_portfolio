@@ -3,13 +3,16 @@ import styled from 'styled-components';
 import SectionTitle from '../UI/SectionTitle';
 import Section from '../UI/Section';
 import Word from '../UI/Word';
+import Container from '../Container';
 
 const MySkills = () => {
     return (
         <Section display='flex' direction='column'>
-            <SectionTitle>My skills</SectionTitle>
-            <Word></Word>
-            {/* <BackgroundCubes /> */}
+
+            <Container>
+                <SectionTitle>My skills</SectionTitle>
+                
+            </Container>
         </Section>
     );
 };

@@ -18,7 +18,7 @@ const AboutSection = () => {
                 </AboutSubtitle>
 
             </AboutContainer>
-            <BackgroundCubes />
+            {/* <BackgroundCubes /> */}
         </About>
     );
 };

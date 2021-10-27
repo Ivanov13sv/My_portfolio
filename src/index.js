@@ -2,7 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { keyframes } from 'styled-components';
 
+const gradient = keyframes`
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+`
 
 const Global = createGlobalStyle`
     *{
@@ -20,23 +33,35 @@ const Global = createGlobalStyle`
     a {
         text-decoration: none;
     };
+
     // body {
     //     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     //     background-size: 400% 400%;
     //     animation: gradient 15s ease infinite;
-    //     height: 100vh;
-
-        
+    //     height: 100vh; 
     // }
 
+    
     body {
-        background-image: linear-gradient(to right, #ffffff, #f8f8f8, #f1f1f1, #eaeaea, #e3e3e3);
-
+        background-image: linear-gradient(45deg, #ffffff, #f8f8f8, #f1f1f1, #eaeaea, #e3e3e3);
+        // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        // animation: ${gradient} 5s ease infinite;
+        // background-size: 400% 400%;
     }
     
 `
 // 
 
+// html, body {
+//     width: 100%;
+//     height:100%;
+//   }
+
+//   body {
+//       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+//       background-size: 400% 400%;
+
+//   }
 
 
 // 

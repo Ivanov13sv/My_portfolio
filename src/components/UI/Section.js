@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import BackgroundCubes from '../UI/BackgroundCubes';
 const Section = (props) => {
     return (
+
         <StyledSection {...props} />
+
     );
 };
 

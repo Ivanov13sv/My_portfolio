@@ -1,14 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 import avatar from '../../img/stanislav.jpg'
 import Section from '../UI/Section'
 
 const HomeSection = () => {
     return (
         <Section display='flex' direction='column'>
-            <HelloBody>
-                <HelloTitle>Hi, <br /> I'm <span>Stas</span> <br /> Beginner Frontend developer </HelloTitle>
-            </HelloBody>
+                <HelloTitle>Hi! <br /> I'm <span>Stas</span>, <br /> Beginner Frontend developer </HelloTitle>
             <About>
                 <SocialLinks>
                     <SocialLink><i class='bx bxl-instagram'></i></SocialLink>
@@ -42,26 +40,42 @@ margin: 50px 0 0 0;
 display: flex;
 `
 
-const HelloBody = styled.div`
-padding: 1rem 0 0 0;
-
-`
 
 const SocialLinks = styled.div`
 display: flex;
 flex-direction: column;
 
 `
+const gradient = keyframes`
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+`
 
 const HelloTitle = styled.h1`
-font-size: 33px;
+font-size: 32px;
 line-height: 130%;
 margin: 20px 0 40px 0;
 text-shadow: 0px 0px 1px #0000005c;
  span{
      position: relative;
      z-index: 5;
-     color: #4070F4;
+    // color: transparent;    
+    color: #4070F4;    
+	// -webkit-background-clip: text;
+	// background-clip: text;
+	// background-image: linear-gradient(-45deg, #ee7752,  #23a6d5, #23d5ab);
+	// background-image: linear-gradient(-45deg, #2A49A1, #345BC7, #3055BA, #4070F4);
+    // animation: ${gradient} 5s ease infinite;
+    // background-size: 400% 400%;
+
  }
     
 }
