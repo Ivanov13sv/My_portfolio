@@ -4,6 +4,8 @@ import App from './App';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { keyframes } from 'styled-components';
 
+
+
 const gradient = keyframes`
     0% {
         background-position: 0% 50%;
@@ -68,8 +70,8 @@ const Global = createGlobalStyle`
 
 const theme = {
     colors: {
-        primary: 'green',
-        secondary: 'red'
+        mainColor: '#4070F4',
+        secondaryColor: '#6f8ee4'
     },
     media: {
         phone: '(max-width: 425px)',

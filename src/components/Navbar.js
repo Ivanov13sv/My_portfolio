@@ -107,5 +107,6 @@ span{
     align-content: center;
     border-radius: 1.25rem 1.25rem 0 0;
     transition: .4s;
+    z-index: 10;
 }
 `

@@ -4,6 +4,7 @@ import SectionTitle from '../UI/SectionTitle';
 import Section from '../UI/Section';
 import Word from '../UI/Word';
 import Container from '../Container';
+import SkillsBox from '../UI/SkillsCube';
 
 const MySkills = () => {
     return (
@@ -11,17 +12,10 @@ const MySkills = () => {
 
             <Container>
                 <SectionTitle>My skills</SectionTitle>
-                
+                <SkillsBox />
             </Container>
         </Section>
     );
 };
 
 export default MySkills;
-
-const SkillsSection = styled.section`
-height: 100vh;
-padding: 4rem 0 4rem 0;
-display: flex;
-flex-direction: column;
-`

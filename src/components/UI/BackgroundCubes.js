@@ -41,7 +41,7 @@ const animate = keyframes`
 }
 
 100%{
-    transform: translateY(-1000px) rotate(720deg);
+    transform: translateY(-1300px) rotate(720deg);
     opacity: 1;
     border-radius: 50%;
 }
@@ -63,7 +63,7 @@ li{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 1);
     animation: ${animate} 13s linear infinite;
     bottom: -150px; 
 }
@@ -72,6 +72,7 @@ li:nth-child(1){
     width: 80px;
     height: 80px;
     animation-delay: 0s;
+
 }
 li:nth-child(2){
     left: 10%;
@@ -81,6 +82,7 @@ li:nth-child(2){
     animation-duration: 12s;
 }
 li:nth-child(3){
+
     left: 70%;
     width: 20px;
     height: 20px;
@@ -94,6 +96,7 @@ li:nth-child(4){
     animation-duration: 18s;
 }
 li:nth-child(5){
+
     left: 65%;
     width: 20px;
     height: 20px;
@@ -112,6 +115,7 @@ li:nth-child(7){
     animation-delay: 7s;
 }
 li:nth-child(8){
+
     left: 50%;
     width: 25px;
     height: 25px;

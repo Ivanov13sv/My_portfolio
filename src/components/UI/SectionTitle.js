@@ -11,6 +11,7 @@ const SectionTitle = (props) => {
 export default SectionTitle;
 
 const StyledTitle = styled.h2`
+text-align: center;
 position: relative;
 margin: 0 auto;
 text-shadow: 0px 0px 1px #0000005c;
@@ -23,7 +24,7 @@ text-shadow: 0px 0px 1px #0000005c;
     right: 0;
     top: 2rem;
     border-radius: 30px;
-    background-color:#4070F4;
+    background-color:${props => props.theme.colors.mainColor};
     box-shadow: inset 0 0 0.5em 0 #4070F4, 0 0 0.5em 0 #4070F4;
     
 }
