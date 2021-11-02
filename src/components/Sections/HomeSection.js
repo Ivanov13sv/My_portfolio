@@ -1,6 +1,5 @@
 import React from 'react';
 import styled,{keyframes} from 'styled-components';
-import avatar from '../../img/stanislav.jpg'
 import Section from '../UI/Section'
 
 const HomeSection = () => {

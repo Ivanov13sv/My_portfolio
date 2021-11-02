@@ -36,15 +36,11 @@ const Global = createGlobalStyle`
         text-decoration: none;
     };
 
-    // body {
-    //     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    //     background-size: 400% 400%;
-    //     animation: gradient 15s ease infinite;
-    //     height: 100vh; 
-    // }
-
     
     body {
+        // background-color: #000;
+        // background-blend-mode: hard-light;
+        // background-image: url("https://res.cloudinary.com/jrying/image/upload/q_auto:good/v1493223181/mXd5dMn_gqciqp.png");
         background-image: linear-gradient(45deg, #ffffff, #f8f8f8, #f1f1f1, #eaeaea, #e3e3e3);
         // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         // animation: ${gradient} 5s ease infinite;

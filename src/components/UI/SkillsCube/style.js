@@ -19,7 +19,7 @@ export const rotating = keyframes`
 `
 export const Container = styled.div`
 margin: 8rem 0 0 0;
-// position: absolute;
+position: relative;
 perspective: 1000px;
 // transform: translate(-50%, -50%);
 `
@@ -36,21 +36,33 @@ width: 150px;
 text-align: center;
 color: white;
 background: #98b0f5;
-border: 2px solid white;
+border: 1px solid white;
 font-size: 32px;
 position: absolute;
 transition: all 1s ease;
+> *{
+    font-size: 100px;
+
+}
+img{
+    width: 80px;
+}
+
 `
 
 export const FrontSide = styled(Side)`
 transform: translateZ(75px);
+color: yellow;
+z-index: 11;
 `
 export const BackSide = styled(Side)`
 transform: translateZ(-75px);
+
 `
 export const LeftSide = styled(Side)`
 right: 75px;
 transform: rotateY(-90deg);
+color: #2565AE;
 `
 export const RightSide = styled(Side)`
 left: 75px;
@@ -59,35 +71,81 @@ transform: rotateY(90deg);
 export const TopSide = styled(Side)`
 bottom: 75px;
 transform: rotateX(90deg);
+color: #61DBFB;
+
 `
 export const BottomSide = styled(Side)`
 top: 75px;
 transform: rotateX(-90deg);
+
 `
 export const Box = styled.div`
+z-index: 10;
 height: 150px;
 width: 150px;
-postion: absolute;
-top: 100px;
-left: 100px;
+position: absolute;
+left: -15px;
+
 transform-style: preserve-3d;
 animation: ${rotating} 7s infinite;
 &:hover ${FrontSide}{
-    transform: translateZ(100px) rotateY(360deg);
+    transform: translateZ(115px) rotateY(360deg);
 }
 &:hover ${BackSide}{
-    transform: translateZ(-100px) rotateY(360deg);
+    transform: translateZ(-115px) rotateY(360deg);
 }
 &:hover ${LeftSide}{
-    right: 100px;
+    right: 115px;
 }
 &:hover ${RightSide}{
-    left: 100px;
+    left: 115px;
 }
 &:hover ${TopSide}{
-    bottom: 100px;
+    bottom: 115px;
 }
 &:hover ${BottomSide}{
-    top: 100px;
+    top: 115px;
 }
+`
+export const InnerBox = styled(Box)`
+z-index: 5;
+top: 25px;
+left: 30px;
+height: 60px;
+width: 60px;
+transform: translateZ(-400px);
+`
+const SmallSide = styled(Side)`
+width: 60px;
+height: 60px;
+z-index: 6;
+`
+
+export const SmallFrontSide = styled(SmallSide)`
+transform: translateZ(30px);
+color: yellow;
+z-index: 5;
+
+`
+export const SmallBackSide = styled(SmallSide)`
+transform: translateZ(-30px);
+`
+export const SmallLeftSide = styled(SmallSide)`
+right: 30px;
+transform: rotateY(-90deg);
+color: #2565AE;
+`
+export const SmallRightSide = styled(SmallSide)`
+left: 30px;
+transform: rotateY(90deg);
+`
+export const SmallTopSide = styled(SmallSide)`
+bottom: 30px;
+transform: rotateX(90deg);
+color: #61DBFB;
+`
+export const SmallBottomSide = styled(SmallSide)`
+top: 30px;
+transform: rotateX(-90deg);
+
 `
