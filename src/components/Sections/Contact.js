@@ -4,18 +4,19 @@ import Section from '../UI/Section';
 import SectionTitle from '../UI/SectionTitle'
 import MyInput from '../UI/MyInput';
 import MyTextarea from '../UI/MyTextarea';
+import MyButton from '../UI/MyButton';
 
 const Contact = () => {
 
     return (
-        <Section padding='2rem 0 0 0' display='flex' direction='column'>
+        <Section display='flex' direction='column' id='#contact'>
             <SectionTitle>Contact</SectionTitle>
             <ContactBody>
                 <ContactForm >
                     < MyInput width='100%' label='Name' />
-                    < MyInput type='email' width='100%' label='Email' />
+                    < MyInput width='100%' type='email' label='Email' />
                     <MyTextarea placeholder='Leave message here...' />
-                    <ContactButton value='Send' type='submit' />
+                    <MyButton type='submit'> Send </MyButton>
                 </ContactForm>
             </ContactBody>
 
@@ -29,21 +30,14 @@ const ContactForm = styled.form`
 display: flex;
 flex-direction: column;
 >:not(:last-child){
-    margin: 0 0 25px 0;
+    margin: 0 0 30px 0;
 }
+justify-content: center;
+align-items: center;
+max-width: 500px;
+margin: 0 auto;
 `
 
 const ContactBody = styled.div`
 padding: 2.5rem 0 0 0;
-`
-
-const ContactButton = styled.input`
-width: 100px;
-height: 30px;
-margin: 0 auto;
-border: 2px solid #6f8ee4;
-border-radius: 5px;
-background-color: transparent;
-font-family: inherit;
-font-size: 1rem;
 `

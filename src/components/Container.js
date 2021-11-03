@@ -11,7 +11,9 @@ export default Container;
 
 const StyledContainer = styled.div`
 margin: 0 auto;
-@media (min-width: 992px){
+
+@media ${({theme}) => theme.media.lg}{
     max-width: 1080px;
+
 }
 `

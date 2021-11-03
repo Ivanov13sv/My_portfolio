@@ -1,46 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
 import stas from '../../img/321.jpg'
+import Section from '../UI/Section';
 import SectionTitle from '../UI/SectionTitle';
 import BackgroundCubes from '../UI/BackgroundCubes';
 
 const AboutSection = () => {
     return (
-        <About>
+        <Section display='flex' direction='column' id='#about'>
             <SectionTitle>About</SectionTitle>
             <AboutContainer>
-
                 <img alt='Stanislav' src={stas} />
-
                 <AboutSubtitle>
                     <h2>My name is Stanislaw</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim laboris nisi ut aliquip ex ea commodo consequatlaboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>I'm a self taught web developer from Moscow, Russia</p>
                 </AboutSubtitle>
-
             </AboutContainer>
             {/* <BackgroundCubes /> */}
-        </About>
+        </Section>
     );
 };
 
 export default AboutSection;
 
-const About = styled.section`
-height: 100vh;
-padding: 4rem 0 4rem 0;
-display: flex;
-flex-direction: column;
-`
 const AboutContainer = styled.div`
 text-align: center;
 row-gap: 2rem;
 padding: 2rem 0 0 0;
 
 img{
-    width: 200px;
+    width: 180px;
     border-radius: 1rem;
     margin: 0 0 10px 0;
-    box-shadow: 0px 0px 18px -3px rgba(114, 114, 114, 0.63) inset;
+    // box-shadow: 0px 0px 18px -3px rgba(114, 114, 114, 0.63) inset;
+    box-shadow: 0 0 1em 0 ${({theme}) => theme.colors.normalBrown};
 }
 `
 const AboutSubtitle = styled.div`

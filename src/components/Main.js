@@ -9,13 +9,13 @@ import Contact from './Sections/Contact';
 const Main = ({ children }) => {
     return (
         <StyledMain>
-            <Container>
-                <HomeSection />
-                <AboutSection />
-                <MySkills />
-                <Contact/>
-                {/* <BackgroundCubes /> */}
-            </Container>
+
+            <HomeSection />
+            <AboutSection />
+            <MySkills />
+            <Contact />
+            <BackgroundCubes />
+
         </StyledMain>
     );
 };
@@ -23,6 +23,10 @@ const Main = ({ children }) => {
 export default Main;
 
 const StyledMain = styled.main`
-padding: 0 10px;
-z-index: 5;
+padding: 0 20px;
+z-index: 15;
+// scroll-snap-type: y mandatory;
+// overflow-y: scroll;
+// height: 100vh;
+
 `

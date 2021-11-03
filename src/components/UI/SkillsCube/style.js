@@ -18,11 +18,20 @@ export const rotating = keyframes`
 }
 `
 export const Container = styled.div`
-margin: 8rem 0 0 0;
+margin: 0 auto;
 position: relative;
 perspective: 1000px;
 // transform: translate(-50%, -50%);
 `
+export const RadioButtons = styled.div`
+margin: 0 0 150px 0;
+    input{
+        margin: 0 10px 0 0;
+    }
+`
+
+
+
 
 export const Side = styled.div`
 box-shadow: inset 0 0 0.5em 0 #4070F4, 0 0 0.5em 0 #4070F4;
@@ -35,7 +44,9 @@ height: 150px;
 width: 150px;
 text-align: center;
 color: white;
-background: #98b0f5;
+// background: #98b0f5;
+background: transparent;
+
 border: 1px solid white;
 font-size: 32px;
 position: absolute;
@@ -57,7 +68,9 @@ z-index: 11;
 `
 export const BackSide = styled(Side)`
 transform: translateZ(-75px);
-
+>*{
+    background: rgb(66, 66, 66);
+}
 `
 export const LeftSide = styled(Side)`
 right: 75px;
@@ -77,35 +90,24 @@ color: #61DBFB;
 export const BottomSide = styled(Side)`
 top: 75px;
 transform: rotateX(-90deg);
-
 `
+
 export const Box = styled.div`
 z-index: 10;
 height: 150px;
 width: 150px;
-position: absolute;
-left: -15px;
-
+// position: absolute;
+// left: -15px;
 transform-style: preserve-3d;
 animation: ${rotating} 7s infinite;
-&:hover ${FrontSide}{
-    transform: translateZ(115px) rotateY(360deg);
-}
-&:hover ${BackSide}{
-    transform: translateZ(-115px) rotateY(360deg);
-}
-&:hover ${LeftSide}{
-    right: 115px;
-}
-&:hover ${RightSide}{
-    left: 115px;
-}
-&:hover ${TopSide}{
-    bottom: 115px;
-}
-&:hover ${BottomSide}{
-    top: 115px;
-}
+&:hover {
+    ${FrontSide}{transform: translateZ(115px) rotateY(360deg);}
+    ${BackSide}{transform: translateZ(-115px) rotateY(360deg);}
+    ${LeftSide}{right: 115px;}
+    ${RightSide}{left: 115px;}
+    ${TopSide}{bottom: 115px;}
+    ${BottomSide}{top: 115px;}
+} 
 `
 export const InnerBox = styled(Box)`
 z-index: 5;

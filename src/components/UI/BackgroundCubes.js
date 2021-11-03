@@ -45,13 +45,12 @@ const animate = keyframes`
     opacity: 1;
     border-radius: 50%;
 }
-
 }
 `;
 
 const Circles = styled.ul`
 position: absolute;
-z-index: 0;
+z-index: -1;
 top: 0;
 left: 0;
 width: 100%;
@@ -66,6 +65,7 @@ li{
     background: rgba(255, 255, 255, 1);
     animation: ${animate} 13s linear infinite;
     bottom: -150px; 
+
 }
 li:nth-child(1){
     left: 25%;
