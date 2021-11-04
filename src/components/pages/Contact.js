@@ -5,20 +5,23 @@ import SectionTitle from '../UI/SectionTitle'
 import MyInput from '../UI/MyInput';
 import MyTextarea from '../UI/MyTextarea';
 import MyButton from '../UI/MyButton';
+import Container from '../Container';
 
 const Contact = () => {
 
     return (
-        <Section display='flex' direction='column' id='#contact'>
-            <SectionTitle>Contact</SectionTitle>
-            <ContactBody>
-                <ContactForm >
-                    < MyInput width='100%' label='Name' />
-                    < MyInput width='100%' type='email' label='Email' />
-                    <MyTextarea placeholder='Leave message here...' />
-                    <MyButton type='submit'> Send </MyButton>
-                </ContactForm>
-            </ContactBody>
+        <Section display='flex' direction='column' id='/contact'>
+
+                <SectionTitle>Contact</SectionTitle>
+                <ContactBody>
+                    <ContactForm >
+                        < MyInput width='100%' label='Name' />
+                        < MyInput width='100%' type='email' label='Email' />
+                        <MyTextarea placeholder='Leave message here...' />
+                        <MyButton type='submit'> Send </MyButton>
+                    </ContactForm>
+                </ContactBody>
+
 
         </Section>
     );
@@ -39,5 +42,5 @@ margin: 0 auto;
 `
 
 const ContactBody = styled.div`
-padding: 2.5rem 0 0 0;
+padding: 2.5rem 15px 0 15px;
 `

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { keyframes } from 'styled-components';
+import BackgroundCubes from './components/UI/BackgroundCubes';
 
 
 
@@ -84,7 +86,9 @@ const theme = {
 ReactDOM.render(
     <ThemeProvider theme={theme}>
         <Global />
-        <App/>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </ThemeProvider>
     ,
     document.getElementById('root')

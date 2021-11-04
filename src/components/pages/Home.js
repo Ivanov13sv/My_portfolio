@@ -4,7 +4,7 @@ import Section from '../UI/Section';
 import Container from '../Container';
 
 
-const HomeSection = () => {
+const Home = () => {
     return (
         <Section padding='3rem 0 0 0' id='#home'>
 
@@ -20,20 +20,30 @@ const HomeSection = () => {
     );
 };
 
-export default HomeSection;
+export default Home;
 
-
+const fade = keyframes`
+0%{
+    transform: translateX(-100%);
+}
+100%{
+    transform: translateX(0);
+}
+`
 
 const HelloTitle = styled.h1`
 font-size: ${props => props.theme.fontSize.mainTitleMd};
 line-height: 130%;
 margin: 20px 0 40px 0;
 text-shadow: 0px 0px 1px #0000005c;
- span{
-     position: relative;
-     z-index: 5;  
+
+
+animation: ${fade} .4s ease-in-out;
+span{
+    position: relative;
+    z-index: 5;  
     color: ${props => props.theme.colors.mainBlue};    
- }
+}
     
 @media ${props => props.theme.media.sm}{
     font-size: ${props => props.theme.fontSize.mainTitleLg};
@@ -41,40 +51,7 @@ text-shadow: 0px 0px 1px #0000005c;
 @media ${props => props.theme.media.lg}{
     font-size: ${props => props.theme.fontSize.mainTitleXl};
 }
-}
 `
-
-// const SocialLinks = styled.div`
-// display: flex;
-// flex-direction: column;
-// `
-
-// const SocialLink = styled.div`
-// display: flex;
-// font-size: 2rem;
-// text-shadow: 0px 0px 1px #0000005c;
-// color: inherit;
-
-//  a {
-//     color: ${({theme}) => theme.colors.darkBrown};
-//     transition: color .3s ease;
-//     &:hover{
-//         color: ${({theme}) => theme.colors.mainBlue};
-//         i {
-//             transition: transform .5s ease;
-//             transform: rotateY(360deg);
-//             text-shadow: 0px 0px 1.5px ${({theme}) => theme.colors.mainBlue};
-//         }
-//     }
-//  }
-// &:not(:last-child){
-//     margin: 0 0 10px 0;
-// }
-
-// @media ${({theme}) => theme.media.md}{
-//     font-size: ${({theme}) => theme.fontSize.mainTitleXl};
-// }
-// `
 
 const SocialLinks = styled.ul`
 display: flex;
@@ -82,7 +59,6 @@ flex-direction: column;
 @media ${({ theme }) => theme.media.md}{
     flex-direction: row;
 }
-
 `
 
 const SocialItem = styled.li`
@@ -142,5 +118,4 @@ list-style: none;
         
     }
 }
-
 `

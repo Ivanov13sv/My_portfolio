@@ -1,43 +1,42 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import FlexContainer from './FlexContainer';
-import { Link } from 'react-scroll'
-import Container from './Container';
-const Navbar = () => {
-    return (
+import { NavLink } from 'react-router-dom';
 
+const Navbar = () => {
+
+    return (
         <nav>
             <NavMenu>
                 <ul>
                     <li>
-                        <NavLink activeClass='active' to='#home' spy={true}>
+                        <StyledNavLink to='/home'>
                             <i class='bx bx-home-alt bx-sm'></i>
                             <span>Home</span>
-                        </NavLink>
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <NavLink activeClass='active' to='#about' spy={true}>
+                        <StyledNavLink to='/about' >
                             <i class='bx bx-user bx-sm' ></i>
                             <span>About</span>
-                        </NavLink>
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <NavLink activeClass='active' to='#skills' spy={true}>
+                        <StyledNavLink  to='/skills' spy={true}>
                             <i class='bx bx-book-alt bx-sm' ></i>
                             <span>Skills</span>
-                        </NavLink>
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <NavLink activeClass='active' to='#portfolio' spy={true}>
+                        <StyledNavLink activeClass='active' to='/portfolio' spy={true}>
                             <i class='bx bx-briefcase-alt bx-sm' ></i>
                             <span>Portfolio</span>
-                        </NavLink>
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <NavLink activeClass='active' to='#contact' spy={true}>
+                        <StyledNavLink activeClass='active' to='/contact' spy={true}>
                             <i class='bx bx-message-square-detail bx-sm'></i>
                             <span>Contact</span>
-                        </NavLink>
+                        </StyledNavLink>
                     </li>
                 </ul>
             </NavMenu>
@@ -128,22 +127,24 @@ const shine = keyframes`
 `
 ;
 
-const NavLink = styled(Link)`
+const StyledNavLink = styled(NavLink)`
 
-&:hover {
-    span{
-        -webkit-animation:${shine} 1s infinite;
-        color: green;
-    }
-  }
+
 &.active > *{
     transition: .3s all ease;
     color: ${props => props.theme.colors.mainBlue};
+
 }
 
 
 @media ${props => props.theme.media.md}{
 cursor: pointer;
+&:hover {
+    span{
+        // -webkit-animation:${shine} 1s infinite;
+        // color: green;
+    }
+}
 }
 `
     ;
