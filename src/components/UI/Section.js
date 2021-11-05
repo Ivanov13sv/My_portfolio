@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 const Section = (props) => {
     return (
 
@@ -9,7 +9,21 @@ const Section = (props) => {
 
 export default Section;
 
+const blur = keyframes`
+0%{
+
+    filter: blur(30px);
+}
+
+100%{
+    filter: blur(0px); 
+}
+
+
+`
+
 const StyledSection = styled.section`
+animation: ${blur} .3s ease-in-out;
 position: relative;
 display: ${props => props.display || 'block'};
 flex-direction: ${props => props.direction || 'row'};

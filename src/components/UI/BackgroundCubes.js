@@ -40,6 +40,11 @@ const animate = keyframes`
     border-radius: 0;
 }
 
+30%{
+    opacity: 1;
+
+}
+
 100%{
     transform: translateY(-1300px) rotate(720deg);
     opacity: 1;
@@ -62,10 +67,9 @@ li{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .5);
     animation: ${animate} 13s linear infinite;
     bottom: -150px; 
-
 }
 li:nth-child(1){
     left: 25%;

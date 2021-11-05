@@ -38,7 +38,7 @@ margin: 20px 0 40px 0;
 text-shadow: 0px 0px 1px #0000005c;
 
 
-animation: ${fade} .4s ease-in-out;
+/* animation: ${fade} .4s ease-in-out; */
 span{
     position: relative;
     z-index: 5;  

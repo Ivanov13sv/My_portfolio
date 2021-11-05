@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -13,20 +13,6 @@ const AppRouter = () => {
 
     return (
         <Switch>
-            {/* <TransitionGroup>
-                <CSSTransition
-                    timeout={300}
-                    classNames='fadeLeft'
-                    key={location.key}>
-                    <Switch location={location}>
-                        <Route path='/home'><Home /></Route>
-                        <Route path='/about'><About /></Route>
-                        <Route path='/skills'><MySkills /></Route>
-                        <Route path='/contact'><Contact /></Route>
-                        <Route path='/portfolio'><Contact /></Route>
-                    </Switch>
-                </CSSTransition>
-            </TransitionGroup> */}
 
             <Route path='/about' component={About} />
             <Route path='/skills' component={MySkills} />
@@ -37,3 +23,4 @@ const AppRouter = () => {
 };
 
 export default AppRouter;
+

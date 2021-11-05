@@ -25,6 +25,7 @@ const About = () => {
 
 export default About;
 
+
 const AboutContainer = styled.div`
 text-align: center;
 row-gap: 2rem;
