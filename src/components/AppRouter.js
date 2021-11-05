@@ -1,5 +1,9 @@
 import React from 'react';
-import { Switch, Route,Redirect } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
+import {
+    Routes,
+    Route
+  } from "react-router-dom";
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -12,14 +16,13 @@ const AppRouter = () => {
     // const location = useLocation()
 
     return (
-        <Switch>
-
-            <Route path='/about' component={About} />
-            <Route path='/skills' component={MySkills} />
-            <Route path='/contact' component={Contact} />
-            <Route path="*" component={Home} />
-            <Redirect to='/home' />
-        </Switch>
+        <Routes>
+            <Route path='/home' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/skills' element={<MySkills />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path="*" element={<Home /> }/>
+        </Routes>
     );
 };
 
