@@ -1,11 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import MySkills from './pages/MySkills';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+// import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './style.css';
 
 const AppRouter = () => {

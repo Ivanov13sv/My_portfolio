@@ -6,7 +6,7 @@ function App() {
         <>
             <Navbar />
             <AppRouter />
-            {/* <BackgroundCubes /> */}
+            <BackgroundCubes />
         </>
     );
 }

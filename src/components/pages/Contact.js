@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Section from '../UI/Section';
 import SectionTitle from '../UI/SectionTitle'
 import MyInput from '../UI/MyInput';
 import MyTextarea from '../UI/MyTextarea';
 import MyButton from '../UI/MyButton';
-import Container from '../Container';
+
 
 const Contact = () => {
 

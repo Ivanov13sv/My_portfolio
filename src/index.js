@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { keyframes } from 'styled-components';
-import BackgroundCubes from './components/UI/BackgroundCubes';
 
 
 
