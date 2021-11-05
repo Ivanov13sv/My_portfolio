@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route,Redirect } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -18,6 +18,7 @@ const AppRouter = () => {
             <Route path='/skills' component={MySkills} />
             <Route path='/contact' component={Contact} />
             <Route path="*" component={Home} />
+            <Redirect to='/home' />
         </Switch>
     );
 };
