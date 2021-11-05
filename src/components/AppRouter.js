@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
 import {
     Routes,
     Route
@@ -13,7 +12,6 @@ import './style.css';
 
 const AppRouter = () => {
 
-    // const location = useLocation()
 
     return (
         <Routes>
