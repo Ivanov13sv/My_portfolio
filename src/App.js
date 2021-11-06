@@ -5,6 +5,7 @@ function App() {
     return (
         <>
             <Navbar />
+            <div>TEST</div>
             <AppRouter />
             <BackgroundCubes />
         </>
