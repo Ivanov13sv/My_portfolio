@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SectionTitle = (props) => {
+
     return (
         <StyledTitle {...props}/>
 
@@ -16,6 +17,7 @@ position: relative;
 margin: 0 auto;
 text-shadow: 0px 0px 1px #0000005c;
 padding: 5px 10px;
+width: max-content;
 &:after{
     position: absolute;
     content: '';
@@ -23,9 +25,8 @@ padding: 5px 10px;
     left: 0;
     right: 0;
     top: 2.5rem;
-    border-bottom: .125rem solid ${({theme}) => theme.colors.secondaryBlue};
+    border-bottom: .125rem solid ${({theme}) => theme.colors.purple};
     border-radius: 30px;
-    box-shadow: 0 0 .4rem 0 ${({theme}) => theme.colors.mainBlue};
-    
+    box-shadow: 0 0 .4rem 0 ${({theme}) => theme.colors.secondaryBlue};
 }
 `

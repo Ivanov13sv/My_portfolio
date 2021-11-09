@@ -1,12 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import { keyframes } from 'styled-components';
-
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+import { keyframes } from "styled-components";
 
 const gradient = keyframes`
     0% {
@@ -19,7 +16,7 @@ const gradient = keyframes`
         background-position: 0% 50%;
     }
 }
-`
+`;
 
 const Global = createGlobalStyle`
     *{
@@ -53,42 +50,43 @@ const Global = createGlobalStyle`
         
     }
     
-`
+`;
 
 const theme = {
-    colors: {
-        mainBlue: '#4070F4',
-        secondaryBlue: '#6f8ee4',
-        darkBrown: '#150b02',
-        normalBrown: '#5e2127',
-        neonBlue: '#0088FF',
-        darkBackground: '#262626'
-    },
-    media: {
-        xs: '(max-width: 375px)',
-        sm: '(min-width: 567px)',
-        md: '(min-width: 768px)',
-        lg: '(min-width: 992px)',
-        xl: '(min-width: 1200px)'
-    },
-    fontSize: {
-        mainTitleXl: '2.5rem',
-        mainTitleLg: '2rem',
-        mainTitleMd: '1.8rem',
-        titleSize: '1.5rem',
-        normalSize: '1rem',
-        iconSize: '.7rem'
-    }
-
-}
+	colors: {
+		mainBlue: "#4070F4",
+		secondaryBlue: "#6f8ee4",
+		purple: "#8c85ea",
+		secondaryPurple: "#deddfd",
+		lime: "#d0e767",
+		darkBrown: "#150b02",
+		normalBrown: "#5e2127",
+		neonBlue: "#0088FF",
+		darkBackground: "#262626",
+	},
+	media: {
+		xs: "(max-width: 375px)",
+		sm: "(min-width: 567px)",
+		md: "(min-width: 768px)",
+		lg: "(min-width: 992px)",
+		xl: "(min-width: 1200px)",
+	},
+	fontSize: {
+		mainTitleXl: "2.5rem",
+		mainTitleLg: "2rem",
+		mainTitleMd: "1.8rem",
+		titleSize: "1.5rem",
+		normalSize: "1rem",
+		iconSize: ".7rem",
+	},
+};
 
 ReactDOM.render(
-    <ThemeProvider theme={theme}>
-        <Global />
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </ThemeProvider>
-    ,
-    document.getElementById('root')
+	<ThemeProvider theme={theme}>
+		<Global />
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</ThemeProvider>,
+	document.getElementById("root")
 );
