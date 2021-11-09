@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyledButton } from './style';
-const MyButton = ({children, ...props}) => {
+const MyLinkButton = ({children, href, ...props}) => {
     return (
-        <StyledButton {...props}>
+        <StyledButton href={href} {...props}>
             <span>{children}</span>
         </StyledButton>
     );
 };
 
-export default MyButton;
+export default MyLinkButton;
