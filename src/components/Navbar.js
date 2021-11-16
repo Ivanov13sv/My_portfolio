@@ -29,7 +29,7 @@ const Navbar = () => {
                     <li>
                         <StyledNavLink activeClass='active' to='/portfolio' spy={true}>
                             <i class='bx bx-briefcase-alt bx-sm' ></i>
-                            <span>Portfolio</span>
+                            <span>Works</span>
                         </StyledNavLink>
                     </li>
                     <li>

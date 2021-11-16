@@ -1,40 +1,43 @@
 import React from "react";
 import Container from "../Container";
-import Card from "../UI/MyCard/index";
+// import MyCard from "../UI/MyCard";
+import MyCard from "../UI/MyCard/index";
 import Section from "../UI/Section";
 import SectionTitle from "../UI/SectionTitle";
 import styled from "styled-components";
 
-const Portfolio = () => {
+
+const Portfolio = ({ ...props }) => {
+
+
 	return (
 		<Section id='/portfolio'>
 			<Container>
-				<SectionTitle> Portfolio </SectionTitle>
+				<SectionTitle> Works </SectionTitle>
 				<PortfolioBody>
-					<Card
-						cardName='UI Framework'
-						cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
-					/>
-					<Card
-						cardName='UI Framework'
-						cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
-					/>
-					<Card
-						cardName='UI Framework'
-						cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
-					/>
-					<Card
-						cardName='UI Framework'
-						cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
-					/>
-					<Card
-						cardName='UI Framework'
-						cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
-					/>
-					<Card
-						cardName='UI Framework'
-						cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
-					/>
+					<h2> Examples of my works</h2>
+					<PortfolioSlider >
+						<MyCard
+							cardName='UI Fraasdmework'
+							cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
+						/>
+						<MyCard
+							cardName='UI Fraasdmework'
+							cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
+						/>
+						<MyCard
+							cardName='UI Fraasdmework'
+							cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
+						/>
+						<MyCard
+							cardName='UI Fraasdmework'
+							cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
+						/>
+						<MyCard
+							cardName='UI Fraasdmework'
+							cardDescr='Lorem	asd;fjnasjkdfn asdf lasdkf alskdf lasdfla ksjdnflkjasdnlk'
+						/>
+					</PortfolioSlider>
 				</PortfolioBody>
 			</Container>
 		</Section>
@@ -44,6 +47,24 @@ const Portfolio = () => {
 export default Portfolio;
 
 const PortfolioBody = styled.div`
+	h2 {
+		text-align: center;
+		display: none;
+	}
+	@media ${({theme}) => theme.media.md}{
+		h2{
+			display: block;
+		}
+	}
+`;
+
+const PortfolioSlider = styled.div`
 	display: flex;
-	flex-wrap: wrap;
+	overflow: auto;
+	padding: 20px 0 20px 0;
+	transition: 0.3s;
+	@media ${(props) => props.theme.media.md} {
+		flex-wrap: wrap;
+		overflow: none;
+	}
 `;

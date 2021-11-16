@@ -1,5 +1,6 @@
 import styled, {keyframes} from "styled-components";
 import background from "../../../img/background/card_background.jpg";
+import MyLinkButton from "../MyLinkButton";
 
 const flow = keyframes`
 0% {
@@ -18,7 +19,7 @@ const flow = keyframes`
 
 export const CardBody = styled.div`
 	background-image: linear-gradient(to top, #22212c, hsl(0 0% 0% / 0));
-	padding: 1.5rem 1.5rem 5rem 1.5rem;
+	padding: 1rem 1rem 5rem 1rem;
 	margin-bottom: -3.5rem;
 
 	> *:not(:last-child) {
@@ -30,7 +31,8 @@ export const CardBody = styled.div`
 	}
 `;
 
-export const CardTitle = styled.h2`
+export const CardTitle = styled.h3`
+	font-size: 1.4rem;
 	color: ${({ theme }) => theme.colors.lime};
 	position: relative;
 	width: max-content;
@@ -55,7 +57,7 @@ export const StyledCard = styled.div`
 	background-image: url(${background});
 	box-shadow: 0 0 15px 3px #767676;
 	border-radius: 15px;
-	max-width: 250px;
+	max-width: 230px;
 	overflow: hidden;
 	animation: ${flow} 300s linear infinite;
 
@@ -84,14 +86,14 @@ export const CardDescr = styled.div`
 	> * {
 		color: ${({ theme }) => theme.colors.secondaryPurple};
 	}
-	h3 {
+	h4 {
 		font-weight: 500;
 		margin: 0 0 10px 0;
 	}
 `;
 
 export const CardStack = styled.div`
-	h3 {
+	h4 {
 		font-weight: 500;
 		color: ${({ theme }) => theme.colors.secondaryPurple};
 	}
@@ -116,3 +118,14 @@ export const CardButtons = styled.div`
 		margin: 0 10px;
 	}
 `;
+
+export const CardButton = styled(MyLinkButton)`
+&:hover{
+	transition: .3s;
+	background-color: ${({theme}) => theme.colors.lime};
+	span{
+		color: black;
+	}
+	
+}
+`
