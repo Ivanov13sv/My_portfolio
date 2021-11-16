@@ -35,13 +35,4 @@ span{
     transition: .3s;
     z-index: 1;
 }
-&:hover {
-    &:before{
-        top: 0;
-    }
-    span{
-        color: #fff;
-        transform: rotateY(360deg);
-    }
-}
 `;

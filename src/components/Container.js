@@ -15,6 +15,7 @@ padding: 0 15px;
 
 @media ${({theme}) => theme.media.md}{
     max-width: 800px;
+    padding: 0 30px;
 }
 
 @media ${({theme}) => theme.media.xl}{

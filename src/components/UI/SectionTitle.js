@@ -29,4 +29,7 @@ width: max-content;
     border-radius: 30px;
     box-shadow: 0 0 .4rem 0 ${({theme}) => theme.colors.secondaryBlue};
 }
+@media ${props => props.theme.media.md}{
+    display: none;
+}
 `

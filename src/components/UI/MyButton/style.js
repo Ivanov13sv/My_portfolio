@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledButton = styled.button`
 	cursor: pointer;
@@ -39,14 +39,5 @@ export const StyledButton = styled.button`
 		left: 0;
 		transition: 0.3s;
 		z-index: 1;
-	}
-	&:hover {
-		&:before {
-			top: 0;
-		}
-		span {
-			color: #fff;
-			transform: rotateY(360deg);
-		}
 	}
 `;
