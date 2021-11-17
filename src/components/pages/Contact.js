@@ -11,7 +11,6 @@ const Contact = () => {
 
     return (
         <Section display='flex' direction='column' >
-
                 <SectionTitle>Contact</SectionTitle>
                 <ContactBody>
                     <ContactForm >
@@ -21,8 +20,6 @@ const Contact = () => {
                         <MyLinkButton as='button' border='grey' > Send </MyLinkButton>
                     </ContactForm>
                 </ContactBody>
-
-
         </Section>
     );
 };
