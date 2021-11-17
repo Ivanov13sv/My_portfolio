@@ -5,10 +5,10 @@ import {
   } from "react-router-dom";
 import About from './pages/About';
 import Contact from './pages/Contact';
-
 import Home from './pages/Home';
 import MySkills from './pages/MySkills';
 import Works from './pages/Works';
+import Test from './pages/Test';
 import './style.css';
 
 const AppRouter = () => {
@@ -21,6 +21,7 @@ const AppRouter = () => {
             <Route path='/skills' element={<MySkills />} />
             <Route path='/works' element={<Works />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/test' element={<Test />} />
             <Route path="*" element={<Home /> }/>
         </Routes>
     );
