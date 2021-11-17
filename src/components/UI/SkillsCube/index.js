@@ -20,11 +20,11 @@ const SkillsBox = () => {
     return (
         <Container>
             <Box>
-                <FrontSide><i class='bx bxl-javascript'></i></FrontSide>
+                <FrontSide><i className='bx bxl-javascript'></i></FrontSide>
                 <BackSide><img src={sc} alt='styled-components'/></BackSide>
                 <LeftSide><img src={css3} alt='css'/></LeftSide>
                 <RightSide><img src={html} alt='html'/></RightSide>
-                <TopSide><i class='bx bxl-react' ></i></TopSide>
+                <TopSide><i className='bx bxl-react' ></i></TopSide>
                 <BottomSide><img src={sass} alt='saas'/></BottomSide>
             </Box>
         </Container>

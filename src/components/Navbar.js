@@ -10,37 +10,31 @@ const Navbar = () => {
                 <ul>
                     <li>
                         <StyledNavLink to='/'>
-                            <i class='bx bx-home-alt bx-sm'></i>
+                            <i className='bx bx-home-alt bx-sm'></i>
                             <span>Home</span>
                         </StyledNavLink>
                     </li>
                     <li>
                         <StyledNavLink to='/about' >
-                            <i class='bx bx-user bx-sm' ></i>
+                            <i className='bx bx-user bx-sm' ></i>
                             <span>About</span>
                         </StyledNavLink>
                     </li>
                     <li>
                         <StyledNavLink  to='/skills' >
-                            <i class='bx bx-book-alt bx-sm' ></i>
+                            <i className='bx bx-book-alt bx-sm' ></i>
                             <span>Skills</span>
                         </StyledNavLink>
                     </li>
                     <li>
                         <StyledNavLink  to='/works' >
-                            <i class='bx bx-briefcase-alt bx-sm' ></i>
+                            <i className='bx bx-briefcase-alt bx-sm' ></i>
                             <span>Works</span>
                         </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink  to='/contactMe' >
-                            <i class='bx bx-message-square-detail bx-sm'></i>
-                            <span>Contact me</span>
-                        </StyledNavLink>
-                    </li>
-                    <li>
                         <StyledNavLink  to='/contact' >
-                            <i class='bx bx-message-square-detail bx-sm'></i>
+                            <i className='bx bx-message-square-detail bx-sm'></i>
                             <span>Contact</span>
                         </StyledNavLink>
                     </li>
