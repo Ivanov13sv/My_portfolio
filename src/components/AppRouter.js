@@ -19,7 +19,6 @@ const AppRouter = () => {
             <Route path='/about' element={<About />} />
             <Route path='/skills' element={<MySkills />} />
             <Route path='/works' element={<Works />} />
-            <Route path='/contact' element={<Contact />} />
             <Route path="*" element={<Home /> }/>
         </Routes>
     );
