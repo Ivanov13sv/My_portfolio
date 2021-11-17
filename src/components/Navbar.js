@@ -38,6 +38,12 @@ const Navbar = () => {
                             <span>Contact me</span>
                         </StyledNavLink>
                     </li>
+                    <li>
+                        <StyledNavLink  to='/contact' >
+                            <i class='bx bx-message-square-detail bx-sm'></i>
+                            <span>Contact</span>
+                        </StyledNavLink>
+                    </li>
                 </ul>
             </NavMenu>
         </nav>

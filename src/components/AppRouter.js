@@ -9,6 +9,7 @@ import MySkills from './pages/MySkills';
 import Works from './pages/Works';
 import './style.css';
 import ContactMe from './pages/ContactMe';
+import Contact from './pages/Contact';
 
 const AppRouter = () => {
 
@@ -20,6 +21,7 @@ const AppRouter = () => {
             <Route path='/skills' element={<MySkills />} />
             <Route path='/works' element={<Works />} />
             <Route path='/contactMe' element={<ContactMe />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path="*" element={<Home /> }/>
         </Routes>
     );
