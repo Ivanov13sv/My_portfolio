@@ -8,7 +8,7 @@ import Container from "../Container";
 
 const About = () => {
 	return (
-		<Section display='flex' direction='column' id='/about'>
+		<Section display='flex' direction='column'>
 			<Container>
 				<SectionTitle>About</SectionTitle>
 				<AboutContainer>

@@ -7,11 +7,11 @@ import SectionTitle from "../UI/SectionTitle";
 import styled from "styled-components";
 
 
-const Portfolio = ({ ...props }) => {
+const Works = ({ ...props }) => {
 
 
 	return (
-		<Section id='/portfolio'>
+		<Section >
 			<Container>
 				<SectionTitle> Works </SectionTitle>
 				<PortfolioBody>
@@ -44,7 +44,7 @@ const Portfolio = ({ ...props }) => {
 	);
 };
 
-export default Portfolio;
+export default Works;
 
 const PortfolioBody = styled.div`
 	h2 {

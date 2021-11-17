@@ -10,7 +10,7 @@ import MyLinkButton from '../UI/MyLinkButton';
 const Contact = () => {
 
     return (
-        <Section display='flex' direction='column' id='/contact'>
+        <Section display='flex' direction='column' >
 
                 <SectionTitle>Contact</SectionTitle>
                 <ContactBody>
