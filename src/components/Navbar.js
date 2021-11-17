@@ -33,15 +33,9 @@ const Navbar = () => {
                         </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink  to='/contact' >
+                        <StyledNavLink  to='/contactMe' >
                             <i class='bx bx-message-square-detail bx-sm'></i>
-                            <span>Contact</span>
-                        </StyledNavLink>
-                    </li>
-                    <li>
-                        <StyledNavLink  to='/test' >
-                            <i class='bx bx-message-square-detail bx-sm'></i>
-                            <span>Test</span>
+                            <span>Contact me</span>
                         </StyledNavLink>
                     </li>
                 </ul>
