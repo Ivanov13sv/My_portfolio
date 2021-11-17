@@ -4,13 +4,13 @@ import Section from '../UI/Section';
 import SectionTitle from '../UI/SectionTitle'
 import MyInput from '../UI/MyInput';
 import MyTextarea from '../UI/MyTextarea';
-import MyButton from '../UI/MyButton';
+import MyLinkButton from '../UI/MyLinkButton';
 
 
 const Contact = () => {
 
     return (
-        <Section display='flex' direction='column' id='/contact'>
+        <Section display='flex' direction='column' >
 
                 <SectionTitle>Contact</SectionTitle>
                 <ContactBody>
@@ -18,7 +18,7 @@ const Contact = () => {
                         < MyInput width='100%' label='Name' />
                         < MyInput width='100%' type='email' label='Email' />
                         <MyTextarea placeholder='Leave message here...' />
-                        <MyButton type='submit'> Send </MyButton>
+                        <MyLinkButton as='button' border='grey' > Send </MyLinkButton>
                     </ContactForm>
                 </ContactBody>
 

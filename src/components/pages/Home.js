@@ -6,8 +6,7 @@ import Container from '../Container';
 
 const Home = () => {
     return (
-        <Section padding='3rem 0 0 0' id='#home'>
-
+        <Section padding='3rem 0 0 0'>
             <Container>
                 <HelloTitle>Hi! <br /> I'm <span>Stas</span>, <br /> Beginner Frontend developer </HelloTitle>
                 <SocialLinks>

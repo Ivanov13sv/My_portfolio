@@ -9,7 +9,7 @@ const Navbar = () => {
             <NavMenu>
                 <ul>
                     <li>
-                        <StyledNavLink to='/home'>
+                        <StyledNavLink to='/'>
                             <i class='bx bx-home-alt bx-sm'></i>
                             <span>Home</span>
                         </StyledNavLink>
@@ -21,19 +21,19 @@ const Navbar = () => {
                         </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink  to='/skills' spy={true}>
+                        <StyledNavLink  to='/skills' >
                             <i class='bx bx-book-alt bx-sm' ></i>
                             <span>Skills</span>
                         </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink activeClass='active' to='/portfolio' spy={true}>
+                        <StyledNavLink  to='/works' >
                             <i class='bx bx-briefcase-alt bx-sm' ></i>
-                            <span>Portfolio</span>
+                            <span>Works</span>
                         </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink activeClass='active' to='/contact' spy={true}>
+                        <StyledNavLink  to='/contact' >
                             <i class='bx bx-message-square-detail bx-sm'></i>
                             <span>Contact</span>
                         </StyledNavLink>

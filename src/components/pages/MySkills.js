@@ -7,7 +7,7 @@ import SkillsBox from '../UI/SkillsCube';
 
 const MySkills = () => {
     return (
-        <Section display='flex' direction='column' id='/skills'>
+        <Section display='flex' direction='column'>
             <SectionTitle>My skills</SectionTitle>
             <Container>
                 <SkillBody>

@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../../Container";
-import MyLinkButton from "../MyLinkButton";
-import {StyledCard, CardBody, CardTitle, CardDescr, CardStack,StackList,CardButtons} from './style';
+import {StyledCard, CardBody, CardTitle, CardDescr, CardStack,StackList,CardButtons, CardButton} from './style';
 
 const Card = ({ cardName, cardDescr, cardStack, gitHref, testHref }) => {
 	return (
@@ -10,11 +9,11 @@ const Card = ({ cardName, cardDescr, cardStack, gitHref, testHref }) => {
 				<CardBody>
 					<CardTitle>{cardName}</CardTitle>
 					<CardDescr>
-						<h3>Description:</h3>
+						<h4>Description:</h4>
 						<p> {cardDescr} </p>
 					</CardDescr>
 					<CardStack>
-						<h3>Stack:</h3>
+						<h4>Stack:</h4>
 						<StackList>
 							<li>react</li>
 							<li>jss</li>
@@ -26,16 +25,16 @@ const Card = ({ cardName, cardDescr, cardStack, gitHref, testHref }) => {
 						</StackList>
 					</CardStack>
 					<CardButtons>
-						<MyLinkButton
+						<CardButton
 							textColor={(props) => props.theme.colors.lime}
 						>
 							Hello
-						</MyLinkButton>
-						<MyLinkButton
+						</CardButton>
+						<CardButton
 							textColor={(props) => props.theme.colors.lime}
 						>
 							Hello
-						</MyLinkButton>
+						</CardButton>
 					</CardButtons>
 				</CardBody>
 			</StyledCard>
