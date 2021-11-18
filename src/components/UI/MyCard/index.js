@@ -28,12 +28,12 @@ const Card = ({ cardName, cardDescr, cardStack, gitHref, testHref }) => {
 						<CardButton
 							textColor={(props) => props.theme.colors.lime}
 						>
-							Hello
+							GitHub
 						</CardButton>
 						<CardButton
 							textColor={(props) => props.theme.colors.lime}
 						>
-							Hello
+							Test
 						</CardButton>
 					</CardButtons>
 				</CardBody>

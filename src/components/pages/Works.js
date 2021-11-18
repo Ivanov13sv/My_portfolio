@@ -11,6 +11,7 @@ const Works = ({ ...props }) => {
 
 
 	return (
+		
 		<Section >
 			<Container>
 				<SectionTitle> Works </SectionTitle>
@@ -61,7 +62,7 @@ const PortfolioBody = styled.div`
 const PortfolioSlider = styled.div`
 	display: flex;
 	overflow: auto;
-	padding: 20px 0 20px 0;
+	padding: 40px 0 20px 0;
 	transition: 0.3s;
 	@media ${(props) => props.theme.media.md} {
 		flex-wrap: wrap;

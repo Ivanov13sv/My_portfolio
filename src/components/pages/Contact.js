@@ -9,8 +9,9 @@ import MyLinkButton from "../UI/MyLinkButton";
 const Contact = () => {
 	return (
 		<Section display='flex' direction='column'>
-			<SectionTitle>Contact</SectionTitle>
+			<SectionTitle>Contact me</SectionTitle>
 			<ContactBody>
+				<ContactPar>You can easily contact me and tell me how your day was.</ContactPar>
 				<ContactForm>
 					<MyInput width='100%' label='Name' />
 					<MyInput width='100%' type='email' label='Email' />
@@ -39,5 +40,11 @@ const ContactForm = styled.form`
 `;
 
 const ContactBody = styled.div`
-	padding: 2.5rem 15px 0 15px;
+	padding: 3rem 15px 0 15px;
 `;
+
+const ContactPar = styled.p`
+text-align: center;
+font-size: 1.3rem;
+margin: 0 0 2.5rem 0;
+`

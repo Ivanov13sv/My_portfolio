@@ -28,7 +28,7 @@ position: relative;
 display: ${props => props.display || 'block'};
 flex-direction: ${props => props.direction || 'row'};
 height: 100vh;
-padding: ${props => props.padding || '1rem 0 0 0'};
+padding: ${props => props.padding || '2.5rem 0 0 0'};
 @media ${props => props.theme.media.md} {
     padding: 5rem 0 2rem;
 }

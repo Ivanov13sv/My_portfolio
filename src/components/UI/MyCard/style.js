@@ -55,7 +55,7 @@ export const StyledCard = styled.div`
 	margin: 30px 0 0 0;
 	padding: 3rem 0 0;
 	background-image: url(${background});
-	box-shadow: 0 0 15px 3px #767676;
+	box-shadow: 0 0 10px 3px #767676;
 	border-radius: 15px;
 	max-width: 230px;
 	overflow: hidden;
